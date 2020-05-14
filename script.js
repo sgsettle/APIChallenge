@@ -12,7 +12,7 @@ searchForm.addEventListener('submit', fetchResults);
 function fetchResults(e){
     e.preventDefault();
     url = `${baseURL}?pattern=${searchTerm.value}`;
-console.log(url);
+// console.log(url);
     fetch(url)
         .then(function(result){
             console.log(result)
