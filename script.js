@@ -12,7 +12,7 @@ searchForm.addEventListener('submit', fetchResults);
 function fetchResults(e){
     e.preventDefault();
     url = `${baseURL}?pattern=${searchTerm.value}`;
-
+console.log(url);
     fetch(url)
         .then(function(result){
             console.log(result)
@@ -38,19 +38,19 @@ function displayResults(json){
 
     let artist = document.createElement('h2');
     let song = document.createElement('p')
-    let id = document.createElement('p');
 
     artist.innerText = r.artist.name;
     song.innerText = r.title;
     
+    artist.className = "artist";
+    song.className = "song";
 
     artist.appendChild(song);
-    song.appendChild(id);
     section.appendChild(artist);
     })
 
     
-    }
+    } 
 
     
     
