@@ -1,4 +1,4 @@
-const baseURL = 'http://www.songsterr.com/a/ra/songs.json';
+const baseURL = 'https://www.songsterr.com/a/ra/songs.json';
 let url;
 
 const searchTerm = document.querySelector('.search');
